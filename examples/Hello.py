@@ -57,7 +57,9 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 
 >>> import Hello
-Nothing to be done.
+# No output. The code inside Hello.py is run when we import it, but
+# the __name__ check (which is now set to "Hello", not "__main__") lets 
+# us avoid running code that we don't want to run when we import.
 
 
 
